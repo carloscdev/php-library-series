@@ -1,5 +1,5 @@
 <?php
-    $title = "Actores";
-    $subtitle = "Lista de Actores";
+    $title = "Lista de Nacionalidades";
+    $showButton = true;
     $childView = "_lista.php";
     include("../../layouts/main_layout.php");

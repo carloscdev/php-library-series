@@ -19,9 +19,21 @@
   include("../../components/navbar.php");
   include("../../components/info.php");
   ?>
-  <main class="container my-5" style="min-height: 800px;">
-    <h1><?= $subtitle ?></h1>
-    <hr />
+  <main class="container my-5" style="min-height: 500px;">
+    <h1 class="d-flex justify-content-between align-items-center">
+      <span><?= $title ?></span>
+      <?php
+        if ($showButton) {
+      ?>
+        <a href="agregar.php" class="btn btn-secondary">
+          <i class="fa-solid fa-plus"></i>
+          AGREGAR
+        </a>
+      <?php
+        }
+      ?>
+    </h1>
+    <hr class="mb-5">
     <?php include($childView); ?>
   </main>
   <?php
