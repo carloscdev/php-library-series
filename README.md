@@ -1,4 +1,15 @@
-# Biblioteca de series
+# Biblioteca de series - Actividad 1
+## Master VIU
+- Desarrollo de aplicaciones Web I: Lado del Servidor (backend)
 
-### Master VIU
-Actividad 1
+## Integrantes
+- Carlos Rafael Córdova Flores
+- Fernando Gual ...
+- Rolando ...
+
+## Tecnologías
+- PHP 8
+- MySQL
+- HTML
+- Bootstrap
+

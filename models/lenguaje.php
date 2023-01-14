@@ -22,7 +22,7 @@ class Lenguaje extends Database {
   public function create($name, $iso) {
     $connection = $this->connect();
     $query = $connection->prepare("INSERT INTO $this->table (name, iso_code) VALUES(:name, :iso)");
-    return $query->execute(array('name' => $name, 'iso' => $iso));
+    return $query->execute(array("name" => $name, "iso" => $iso));
   }
 
   public function update($id, $name, $iso) {
