@@ -20,15 +20,17 @@
   include("../../components/info.php");
   ?>
   <main class="container my-5" style="min-height: 500px;">
-    <h1 class="d-flex justify-content-between align-items-center">
+    <h1 class="d-sm-flex justify-content-between align-items-center">
       <span><?= $title ?></span>
       <?php
         if ($showButton) {
       ?>
-        <a href="agregar.php" class="btn btn-secondary">
-          <i class="fa-solid fa-plus"></i>
-          AGREGAR
-        </a>
+        <div class="d-grid mt-3 mt-sm-0">
+          <a href="agregar.php" class="btn btn-secondary">
+            <i class="fa-solid fa-plus"></i>
+            AGREGAR
+          </a>
+        </div>
       <?php
         }
       ?>

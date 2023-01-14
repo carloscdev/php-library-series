@@ -1,26 +1,26 @@
 <?php
-require_once "../../controllers/nacionalidad/detalle.php";
+require_once "../../controllers/lenguaje/detalle.php";
 ?>
 
 <form method="POST" class="col-md-6 mx-auto">
-  <?php require_once "../../controllers/nacionalidad/editar.php" ?>
+  <?php require_once "../../controllers/lenguaje/editar.php" ?>
   <input type="hidden" name="id" value="<?= $id ?>">
   <div class="form-group mb-3">
     <label for="name" class="form-label">Nombre</label>
     <input
       class="form-control"
       id="name" name="name"
-      placeholder="Ingresa el nombre del país"
+      placeholder="Ingresa el nombre del lenguaje"
       value="<?= $row['name'] ?>"
     >
   </div>
   <div class="form-group mb-3">
-    <label for="population" class="form-label">Población</label>
+    <label for="iso" class="form-label">Código ISO</label>
     <input
       class="form-control"
-      id="population" name="population"
-      placeholder="Ingresa la población actual"
-      value="<?= $row['population'] ?>"
+      id="iso" name="iso"
+      placeholder="Ingresa el código ISO"
+      value="<?= $row['iso_code'] ?>"
     >
   </div>
   <hr>

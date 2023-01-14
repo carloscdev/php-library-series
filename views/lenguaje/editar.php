@@ -1,6 +1,6 @@
 <?php
     $id = $_GET["id"];
-    $title = "Eliminar Nacionalidad ID $id";
+    $title = "Editar Lenguaje con ID $id";
     $showButton = false;
-    $childView = "_eliminar.php";
+    $childView = "_editar.php";
     include("../../layouts/main_layout.php");

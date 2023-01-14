@@ -1,21 +1,21 @@
 <?php
 
-require_once "../../models/nacionalidad.php";
+require_once "../../models/lenguaje.php";
 
 if (!empty($_POST["save"])) {
   if (
     !empty($_POST["name"]) &&
-    !empty($_POST["population"])
+    !empty($_POST["iso"])
   ) {
     $id = $_POST["id"];
     $name = $_POST["name"];
-    $population = $_POST["population"];
+    $iso = $_POST["iso"];
 
-    $nacionalidad = new Nacionalidad();
-    $response = $nacionalidad->update($id, $name, $population);
+    $lenguaje = new Lenguaje();
+    $response = $lenguaje->update($id, $name, $iso);
 
     if ($response) {
-      header("location:../../views/nacionalidad/lista.php");
+      header("location:../../views/lenguaje/lista.php");
     }  else {
       echo '<div class="alert alert-danger">No se puedo guardar los datos.</div>';
     }

@@ -1,9 +1,9 @@
 <?php
-require_once "../../controllers/nacionalidad/detalle.php";
+require_once "../../controllers/lenguaje/detalle.php";
 ?>
 
 <form method="POST" class="col-md-6 mx-auto">
-  <?php require_once "../../controllers/nacionalidad/eliminar.php" ?>
+  <?php require_once "../../controllers/lenguaje/eliminar.php" ?>
   <input type="hidden" name="id" value="<?= $id ?>">
   <h3>
     ¿Estás seguro de eliminar <?= $row["name"] ?>?

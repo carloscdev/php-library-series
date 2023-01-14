@@ -2,8 +2,8 @@
 
 require_once "../../config/database.php";
 
-class Nacionalidad extends Database {
-  private $table = "tbl_nationality";
+class Lenguaje extends Database {
+  private $table = "tbl_language";
 
   public function list() {
     $connection = $this->connect();
@@ -19,16 +19,16 @@ class Nacionalidad extends Database {
     return $query;
   }
 
-  public function create($name, $population) {
+  public function create($name, $iso) {
     $connection = $this->connect();
-    $query = $connection->prepare("INSERT INTO $this->table (name, population) VALUES(:name, :population)");
-    return $query->execute(array('name' => $name, 'population' => $population));
+    $query = $connection->prepare("INSERT INTO $this->table (name, iso_code) VALUES(:name, :iso)");
+    return $query->execute(array('name' => $name, 'iso' => $iso));
   }
 
-  public function update($id, $name, $population) {
+  public function update($id, $name, $iso) {
     $connection = $this->connect();
-    $query = $connection->prepare("UPDATE $this->table SET name = :name, population = :population WHERE id = :id");
-    return $query->execute(array("name" => $name, "population" => $population, "id" => $id));
+    $query = $connection->prepare("UPDATE $this->table SET name = :name, iso_code = :iso WHERE id = :id");
+    return $query->execute(array("name" => $name, "iso" => $iso, "id" => $id));
   }
 
   public function remove($id) {
