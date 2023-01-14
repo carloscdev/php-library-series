@@ -15,7 +15,7 @@ if (!empty($_POST["save"])) {
     if ($response) {
       header("location:../../views/lenguaje/lista.php");
     } else {
-      echo '<div class="alert alert-danger">No se puedo guardar los datos.</div>';
+      echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }
   } else {
     echo '<div class="alert alert-warning">Completa todos los campos para continuar.</div>';

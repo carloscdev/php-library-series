@@ -10,8 +10,9 @@
   <tbody>
     <?php
       require_once "../../controllers/lenguaje/lista.php";
+      $list = getLanguageList();
 
-      foreach($lenguaje_list as $row) {
+      foreach($list as $row) {
     ?>
     <tr>
       <td><?= $row["id"] ?></td>

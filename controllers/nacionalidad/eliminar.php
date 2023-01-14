@@ -9,6 +9,6 @@ if (!empty($_POST["delete"])) {
   if ($response) {
     header("location:../../views/nacionalidad/lista.php");
   }  else {
-    echo '<div class="alert alert-danger">No se puedo eliminar los datos.</div>';
+    echo '<div class="alert alert-danger">No se pudo eliminar los datos.</div>';
   }
 }

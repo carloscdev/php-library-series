@@ -1,21 +1,21 @@
 <?php
 
-require_once "../../models/lenguaje.php";
+require_once "../../models/plataforma.php";
 
 if (!empty($_POST["save"])) {
   if (
     !empty($_POST["name"]) &&
-    !empty($_POST["iso"])
+    !empty($_POST["description"])
   ) {
     $id = $_POST["id"];
     $name = $_POST["name"];
-    $iso = $_POST["iso"];
+    $description = $_POST["description"];
 
-    $lenguaje = new Lenguaje();
-    $response = $lenguaje->update($id, $name, $iso);
+    $plataforma = new Plataforma();
+    $response = $plataforma->update($id, $name, $description);
 
     if ($response) {
-      header("location:../../views/lenguaje/lista.php");
+      header("location:../../views/plataforma/lista.php");
     }  else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }

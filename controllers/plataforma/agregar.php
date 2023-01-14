@@ -1,19 +1,19 @@
 <?php
-require_once "../../models/nacionalidad.php";
+require_once "../../models/plataforma.php";
 
 if (!empty($_POST["save"])) {
   if (
     !empty($_POST["name"]) &&
-    !empty($_POST["population"])
+    !empty($_POST["description"])
   ) {
     $name = $_POST["name"];
-    $population = $_POST["population"];
+    $description = $_POST["description"];
 
-    $nacionalidad = new Nacionalidad();
+    $plataforma = new Plataforma();
 
-    $response = $nacionalidad->create($name, $population);
+    $response = $plataforma->create($name, $description);
     if ($response) {
-      header("location:../../views/nacionalidad/lista.php");
+      header("location:../../views/plataforma/lista.php");
     } else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }
