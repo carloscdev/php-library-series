@@ -9,20 +9,29 @@
     </tr>
   </thead>
   <tbody>
+    <?php
+      require_once "../../controllers/director/lista.php";
+      $list = getDirectorList();
+
+      foreach($list as $row) {
+    ?>
     <tr>
-      <th scope="row">1</th>
-      <td>Carlos Córdova</td>
-      <td>19-08-1996</td>
-      <td>Perú</td>
+      <td><?= $row["id"] ?></td>
+      <td><?= $row["name"] ?></td>
+      <td><?= $row["date_birth"] ?></td>
+      <td><?= $row["nationality"] ? $row["nationality"] : '---' ?></td>
       <td class="d-flex justify-content-end gap-1">
-        <a class="btn btn-small btn-dark">
+        <a href="editar.php?id=<?= $row["id"] ?>" class="btn btn-small btn-dark">
           <i class="fa-solid fa-pen"></i>
         </a>
-        <a class="btn btn-small btn-danger">
+        <a href="eliminar.php?id=<?= $row["id"] ?>" class="btn btn-small btn-danger">
           <i class="fa-solid fa-trash"></i>
         </a>
       </td>
     </tr>
+    <?php
+    }
+    ?>
   </tbody>
 </table>
 <p class="text-end">

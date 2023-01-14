@@ -19,7 +19,7 @@
       <td><?= $row["id"] ?></td>
       <td><?= $row["name"] ?></td>
       <td><?= $row["date_birth"] ?></td>
-      <td><?= $row["nationality"] ?></td>
+      <td><?= $row["nationality"] ? $row["nationality"] : '---' ?></td>
       <td class="d-flex justify-content-end gap-1">
         <a href="editar.php?id=<?= $row["id"] ?>" class="btn btn-small btn-dark">
           <i class="fa-solid fa-pen"></i>

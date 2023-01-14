@@ -1,16 +1,16 @@
 <?php
-require_once "../../controllers/actor/detalle.php";
+require_once "../../controllers/director/detalle.php";
 ?>
 
 <form method="POST" class="col-md-6 mx-auto">
-  <?php require_once "../../controllers/actor/editar.php" ?>
+  <?php require_once "../../controllers/director/editar.php" ?>
   <input type="hidden" name="id" value="<?= $id ?>">
   <div class="form-group mb-3">
     <label for="name" class="form-label">Nombre</label>
     <input
       class="form-control"
       id="name" name="name"
-      placeholder="Ingresa el nombre del actor"
+      placeholder="Ingresa el nombre del director"
       value="<?= $row['name'] ?>"
     >
   </div>
@@ -20,7 +20,7 @@ require_once "../../controllers/actor/detalle.php";
       class="form-control"
       id="last_name"
       name="last_name"
-      placeholder="Ingresa el apellido del actor"
+      placeholder="Ingresa el apellido del director"
       value="<?= $row['last_name'] ?>"
     >
   </div>

@@ -2,8 +2,8 @@
 
 require_once "../../config/database.php";
 
-class Actor extends Database {
-  private $table = "tbl_actor";
+class Director extends Database {
+  private $table = "tbl_director";
 
   public function list() {
     $connection = $this->connect();
