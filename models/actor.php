@@ -8,7 +8,7 @@ class Actor extends Database {
   public function list() {
     $connection = $this->connect();
     $query = $connection->prepare(
-      "SELECT a.id, concat_ws(' ', a.name, a.last_name) AS name, a.date_birth, n.name AS nationality
+      "SELECT a.id, CONCAT_WS(' ', a.name, a.last_name) AS name, a.date_birth, n.name AS nationality
       FROM $this->table a LEFT JOIN tbl_nationality n ON a.nationality_id = n.id"
     );
     $query->execute();

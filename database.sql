@@ -53,11 +53,11 @@ CREATE TABLE IF NOT EXISTS tbl_serie_actor (
   PRIMARY KEY (actor_id, serie_id)
 );
 
-CREATE TABLE IF NOT EXISTS tbl_serie_lenguage (
+CREATE TABLE IF NOT EXISTS tbl_serie_language (
   type VARCHAR(10) NOT NULL,
   serie_id INT NOT NULL,
   language_id INT NOT NULL,
   FOREIGN KEY(serie_id) REFERENCES tbl_serie(id) ON DELETE CASCADE,
   FOREIGN KEY(language_id) REFERENCES tbl_language(id) ON DELETE CASCADE,
-  PRIMARY KEY(serie_id, language_id)
+  PRIMARY KEY(type, serie_id, language_id)
 );

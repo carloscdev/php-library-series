@@ -1,4 +1,4 @@
-<form method="POST" class="col-md-6 mx-auto">
+<form method="POST" class="col-md-6 mx-auto" autocomplete="off">
   <?php require_once "../../controllers/plataforma/agregar.php" ?>
   <div class="form-group mb-3">
     <label for="name" class="form-label">Nombre</label>

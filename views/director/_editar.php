@@ -2,7 +2,7 @@
 require_once "../../controllers/director/detalle.php";
 ?>
 
-<form method="POST" class="col-md-6 mx-auto">
+<form method="POST" class="col-md-6 mx-auto" autocomplete="off">
   <?php require_once "../../controllers/director/editar.php" ?>
   <input type="hidden" name="id" value="<?= $id ?>">
   <div class="form-group mb-3">
