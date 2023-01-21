@@ -32,6 +32,11 @@
     ?>
   </tbody>
 </table>
+<?php
+if (count($list) == 0) {
+  require_once "../../components/empty.php";
+}
+?>
 <p class="text-end">
   <small id="platform" class="text-default">Tabla: tbl_platform</small>
 </p>

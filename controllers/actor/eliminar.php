@@ -7,7 +7,7 @@ if (!empty($_POST["delete"])) {
   $actor = new Actor();
   $response = $actor->remove($id);
   if ($response) {
-    header("location:../../views/actor/lista.php");
+    echo '<script> location.replace("../../views/actor/lista.php"); </script>';
   }  else {
     echo '<div class="alert alert-danger">No se pudo eliminar los datos.</div>';
   }

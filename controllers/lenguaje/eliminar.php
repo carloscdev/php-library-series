@@ -7,7 +7,7 @@ if (!empty($_POST["delete"])) {
   $lenguaje = new Lenguaje();
   $response = $lenguaje->remove($id);
   if ($response) {
-    header("location:../../views/lenguaje/lista.php");
+    echo '<script> location.replace("../../views/lenguaje/lista.php"); </script>';
   }  else {
     echo '<div class="alert alert-danger">No se pudo eliminar los datos.</div>';
   }

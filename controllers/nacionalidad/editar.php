@@ -15,7 +15,7 @@ if (!empty($_POST["save"])) {
     $response = $nacionalidad->update($id, $name, $population);
 
     if ($response) {
-      header("location:../../views/nacionalidad/lista.php");
+      echo '<script> location.replace("../../views/nacionalidad/lista.php"); </script>';
     }  else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }

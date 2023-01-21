@@ -1,7 +1,7 @@
 <?php
 
 if (empty($_GET["id"])) {
-  header("location:lista.php");
+  echo '<script> location.replace("lista.php"); </script>';
 }
 require_once "../../models/serie.php";
 $id = $_GET["id"];
@@ -9,7 +9,7 @@ $serie = new Serie();
 $query = $serie->detail($id);
 $count = $query->rowCount();
 if ($count == 0) {
-  header("location:lista.php");
+  echo '<script> location.replace("lista.php"); </script>';
 }
 $row = $query->fetch(PDO::FETCH_ASSOC);
 

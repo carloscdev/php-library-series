@@ -17,7 +17,7 @@ if (!empty($_POST["save"])) {
 
     $response = $actor->create($name, $last_name, $date_birth, $nationality);
     if ($response) {
-      header("location:../../views/actor/lista.php");
+      echo '<script> location.replace("../../views/actor/lista.php"); </script>';
     } else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }

@@ -15,7 +15,7 @@ if (!empty($_POST["save"])) {
     $response = $plataforma->update($id, $name, $description);
 
     if ($response) {
-      header("location:../../views/plataforma/lista.php");
+      echo '<script> location.replace("../../views/plataforma/lista.php"); </script>';
     }  else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }

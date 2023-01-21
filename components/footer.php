@@ -3,6 +3,6 @@
     Biblioteca de series - Actividad 1 © <?= date("Y") ?>
   </p>
   <p style="font-size: 0.7rem; opacity: 0.7;">
-    Desarrollado con PHP - MYSQL - HTML - BOOTSTRAP
+    Desarrollado con PHP - MYSQL - HTML - CSS - BOOTSTRAP
   </p>
 </footer>

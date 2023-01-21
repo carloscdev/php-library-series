@@ -7,7 +7,7 @@ if (!empty($_POST["delete"])) {
   $director = new Director();
   $response = $director->remove($id);
   if ($response) {
-    header("location:../../views/director/lista.php");
+    echo '<script> location.replace("../../views/director/lista.php"); </script>';
   }  else {
     echo '<div class="alert alert-danger">No se pudo eliminar los datos.</div>';
   }

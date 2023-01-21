@@ -17,7 +17,7 @@ if (!empty($_POST["save"])) {
 
     $response = $director->create($name, $last_name, $date_birth, $nationality);
     if ($response) {
-      header("location:../../views/director/lista.php");
+      echo '<script> location.replace("../../views/director/lista.php"); </script>';
     } else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }

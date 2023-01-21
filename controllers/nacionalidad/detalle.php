@@ -1,7 +1,7 @@
 <?php
 
 if (empty($_GET["id"])) {
-  header("location:lista.php");
+  echo '<script> location.replace("lista.php"); </script>';
 } else {
   require_once "../../models/nacionalidad.php";
   $id = $_GET["id"];
@@ -9,7 +9,7 @@ if (empty($_GET["id"])) {
   $query = $nacionalidad->detail($id);
   $count = $query->rowCount();
   if ($count == 0) {
-    header("location:lista.php");
+    echo '<script> location.replace("lista.php"); </script>';
   }
   $row = $query->fetch(PDO::FETCH_ASSOC);
 }

@@ -38,7 +38,7 @@ if (!empty($_POST["save"])) {
       foreach ($audio as $audio_item) {
         $serie->addLanguage('audio', $id, $audio_item);
       }
-      header("location:../../views/serie/lista.php");
+      echo '<script> location.replace("../../views/serie/lista.php"); </script>';
     }  else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }

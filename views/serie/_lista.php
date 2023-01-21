@@ -42,6 +42,11 @@
     ?>
   </tbody>
 </table>
+<?php
+if (count($list) == 0) {
+  require_once "../../components/empty.php";
+}
+?>
 <p class="text-end">
   <small id="serie" class="text-default">Tabla: tbl_serie</small>
 </p>

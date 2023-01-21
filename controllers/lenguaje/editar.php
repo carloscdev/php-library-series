@@ -15,7 +15,7 @@ if (!empty($_POST["save"])) {
     $response = $lenguaje->update($id, $name, $iso);
 
     if ($response) {
-      header("location:../../views/lenguaje/lista.php");
+      echo '<script> location.replace("../../views/lenguaje/lista.php"); </script>';
     }  else {
       echo '<div class="alert alert-danger">No se pudo guardar los datos.</div>';
     }

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="../home" style="font-size: 2rem;">
-      <i class="fa-solid fa-film"></i>
+      <img src="../../images/logo.png" alt="Logo" width="50" height="50">
     </a>
     <button
       class="navbar-toggler"
@@ -32,7 +32,7 @@
             <a class="dropdown-item" href="../serie/lista.php">Series</a>
             <a class="dropdown-item" href="../actor/lista.php">Actores</a>
             <a class="dropdown-item" href="../director/lista.php">Directores</a>
-            <a class="dropdown-item" href="../plataforma/lista.php">Plataforma</a>
+            <a class="dropdown-item" href="../plataforma/lista.php">Plataformas</a>
             <a class="dropdown-item" href="../lenguaje/lista.php">Lenguajes</a>
             <a class="dropdown-item" href="../nacionalidad/lista.php">Nacionalidad</a>
           </div>

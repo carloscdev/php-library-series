@@ -7,7 +7,7 @@ if (!empty($_POST["delete"])) {
   $nacionalidad = new Nacionalidad();
   $response = $nacionalidad->remove($id);
   if ($response) {
-    header("location:../../views/nacionalidad/lista.php");
+    echo '<script> location.replace("../../views/nacionalidad/lista.php"); </script>';
   }  else {
     echo '<div class="alert alert-danger">No se pudo eliminar los datos.</div>';
   }

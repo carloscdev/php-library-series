@@ -32,6 +32,11 @@
     ?>
   </tbody>
 </table>
+<?php
+if (count($list) == 0) {
+  require_once "../../components/empty.php";
+}
+?>
 <p class="text-end">
   <small id="language" class="text-default">Tabla: tbl_language</small>
 </p>

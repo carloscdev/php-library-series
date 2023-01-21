@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <!--Open Graph-->
+  <meta property="og:title" content="Biblioteca de Series">
+  <meta property="og:description" content="Actividad - 1 [PHP - MySQL]">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://php-library-series.000webhostapp.com/">
+  <meta
+    property="og:image"
+    content="https://images.unsplash.com/photo-1616530940355-351fabd9524b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+  >
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"

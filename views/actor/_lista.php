@@ -18,7 +18,7 @@
     <tr>
       <td><?= $row["id"] ?></td>
       <td><?= $row["name"] ?></td>
-      <td><?= $row["date_birth"] ?></td>
+      <td><?= date("d/m/Y", strtotime($row["date_birth"])) ?></td>
       <td><?= $row["nationality"] ? $row["nationality"] : '---' ?></td>
       <td class="d-flex justify-content-end gap-1">
         <a href="editar.php?id=<?= $row["id"] ?>" class="btn btn-small btn-dark">
@@ -34,6 +34,11 @@
     ?>
   </tbody>
 </table>
+<?php
+if (count($list) == 0) {
+  require_once "../../components/empty.php";
+}
+?>
 <p class="text-end">
   <small id="actor" class="text-default">Tabla: tbl_actor</small>
 </p>

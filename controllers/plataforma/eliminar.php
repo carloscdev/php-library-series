@@ -7,7 +7,7 @@ if (!empty($_POST["delete"])) {
   $plataforma = new Plataforma();
   $response = $plataforma->remove($id);
   if ($response) {
-    header("location:../../views/plataforma/lista.php");
+    echo '<script> location.replace("../../views/plataforma/lista.php"); </script>';
   }  else {
     echo '<div class="alert alert-danger">No se pudo eliminar los datos.</div>';
   }
