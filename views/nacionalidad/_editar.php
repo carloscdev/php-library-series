@@ -17,6 +17,7 @@ require_once "../../controllers/nacionalidad/detalle.php";
   <div class="form-group mb-3">
     <label for="population" class="form-label">Población</label>
     <input
+      type="number"
       class="form-control"
       id="population" name="population"
       placeholder="Ingresa la población actual"

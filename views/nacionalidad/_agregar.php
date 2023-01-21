@@ -6,7 +6,13 @@
   </div>
   <div class="form-group mb-3">
     <label for="population" class="form-label">Población</label>
-    <input class="form-control" id="population" name="population" placeholder="Ingresa la población actual">
+    <input
+      type="number"
+      class="form-control"
+      id="population"
+      name="population"
+      placeholder="Ingresa la población actual"
+    >
   </div>
   <hr>
   <div class="d-grid gap-3">
