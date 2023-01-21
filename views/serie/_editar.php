@@ -13,6 +13,7 @@ require_once "../../controllers/serie/detalle.php";
       name="title"
       placeholder="Ingresa el título de la serie"
       value="<?= $row['title'] ?>"
+      maxlength="50"
     >
   </div>
   <div class="form-group">

@@ -2,11 +2,23 @@
   <?php require_once "../../controllers/director/agregar.php" ?>
   <div class="form-group mb-3">
     <label for="name" class="form-label">Nombre</label>
-    <input class="form-control" id="name" name="name" placeholder="Ingresa el nombre del director">
+    <input
+      class="form-control"
+      id="name"
+      name="name"
+      placeholder="Ingresa el nombre del director"
+      maxlength="50"
+    >
   </div>
   <div class="form-group mb-3">
     <label for="last_name" class="form-label">Apellidos</label>
-    <input class="form-control" id="last_name" name="last_name" placeholder="Ingresa el apellido del director">
+    <input
+      class="form-control"
+      id="last_name"
+      name="last_name"
+      placeholder="Ingresa el apellido del director"
+      maxlength="50"
+    >
   </div>
   <div class="form-group mb-3">
     <label for="date_birth" class="form-label">Fecha de Nacimiento</label>

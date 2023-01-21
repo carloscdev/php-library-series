@@ -12,6 +12,7 @@ require_once "../../controllers/nacionalidad/detalle.php";
       id="name" name="name"
       placeholder="Ingresa el nombre del país"
       value="<?= $row['name'] ?>"
+      maxlength="50"
     >
   </div>
   <div class="form-group mb-3">

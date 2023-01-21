@@ -2,7 +2,13 @@
   <?php require_once "../../controllers/serie/agregar.php" ?>
   <div class="form-group mb-4">
     <label for="title" class="form-label">Título</label>
-    <input class="form-control" id="title" name="title" placeholder="Ingresa el título de la serie">
+    <input
+      class="form-control"
+      id="title"
+      name="title"
+      placeholder="Ingresa el título de la serie"
+      maxlength="50"
+    >
   </div>
   <div class="form-group">
     <label for="platform" class="form-label">Plataforma</label>

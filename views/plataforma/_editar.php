@@ -12,6 +12,7 @@ require_once "../../controllers/plataforma/detalle.php";
       id="name" name="name"
       placeholder="Ingresa el nombre del lenguaje"
       value="<?= $row['name'] ?>"
+      maxlength="30"
     >
   </div>
   <div class="form-group mb-3">

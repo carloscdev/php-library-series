@@ -12,6 +12,7 @@ require_once "../../controllers/lenguaje/detalle.php";
       id="name" name="name"
       placeholder="Ingresa el nombre del lenguaje"
       value="<?= $row['name'] ?>"
+      maxlength="30"
     >
   </div>
   <div class="form-group mb-3">
@@ -21,6 +22,7 @@ require_once "../../controllers/lenguaje/detalle.php";
       id="iso" name="iso"
       placeholder="Ingresa el código ISO"
       value="<?= $row['iso_code'] ?>"
+      maxlength="5"
     >
   </div>
   <hr>

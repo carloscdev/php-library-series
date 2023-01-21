@@ -12,6 +12,7 @@ require_once "../../controllers/actor/detalle.php";
       id="name" name="name"
       placeholder="Ingresa el nombre del actor"
       value="<?= $row['name'] ?>"
+      maxlength="50"
     >
   </div>
   <div class="form-group mb-3">
@@ -22,6 +23,7 @@ require_once "../../controllers/actor/detalle.php";
       name="last_name"
       placeholder="Ingresa el apellido del actor"
       value="<?= $row['last_name'] ?>"
+      maxlength="50"
     >
   </div>
   <div class="form-group mb-3">
