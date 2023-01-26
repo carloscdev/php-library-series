@@ -3,9 +3,9 @@
 - Desarrollo de aplicaciones Web I: Lado del Servidor (backend)
 
 ## Integrantes
-- Carlos Córdova
-- Fernando Gual
-- Rolando Rivera
+- Carlos Rafael Córdova Flores
+- Fernando Hernández Gual
+- Rolando Alfonso Rivera Ibarra
 
 ## Tecnologías
 - PHP 8
