@@ -9,9 +9,9 @@
     <p><small>Desarrollo de aplicaciones Web I: Lado del Servidor (backend) </small></p>
     <h4>Integrantes</h4>
     <ul>
-      <li>Carlos Córdova</li>
-      <li>Fernando Gual</li>
-      <li>Rolando Rivera</li>
+      <li>Carlos Rafael Córdova Flores</li>
+      <li>Fernando Hernández Gual</li>
+      <li>Rolando Alfonso Rivera Ibarra</li>
     </ul>
     <h4>Tecnologías</h4>
     <ul>
